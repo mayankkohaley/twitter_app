@@ -31,6 +31,8 @@ GEM
     annotate-models (1.0.4)
     arel (2.0.10)
     builder (2.1.2)
+    css3buttons (0.9.5)
+      actionpack (>= 3.0.0)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -97,6 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate-models (= 1.0.4)
+  css3buttons
   factory_girl_rails (= 1.0)
   gravatar_image_tag (= 1.0.0.pre2)
   rails (= 3.0.9)

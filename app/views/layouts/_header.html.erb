@@ -1,16 +1,19 @@
 <header>
 	<%= link_to logo , root_path %>
-	<nav class ="round">
+	<nav>
 		<ul>
-			<li><%= link_to "Home", root_path %></li>
+			<%= button_group do %>
+			<li><%= pill_button_link_to "Home", root_path %></li>
 			<% if signed_in? %>
-			<li><%= link_to "Profile", current_user %></li>
+			<li><%= pill_button_link_to "Profile", current_user %></li>
+			<li><%= settings_pill_button_link_to "Settings", edit_user_path(current_user) %></li>
 			<% end %>
-			<li><%= link_to "Help", help_path %></li>
+			<li><%= pill_button_link_to "Help", help_path %></li>
 			<% if signed_in? %>
-			<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+			<li><%= pill_button_link_to "Sign out", signout_path, :method => :delete %></li>
 			<% else %>
-      <li><%= link_to "Sign in", signin_path %></li>
+      <li><%= pill_button_link_to "Sign in", signin_path %></li>
+      <% end %>
       <% end %>
     </ul>
   </nav>

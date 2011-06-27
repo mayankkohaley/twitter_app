@@ -1,8 +1,10 @@
 <footer>
 	<nav class = "round">
 		<ul>
-			<li><%= link_to "About", about_path %></li>
-			<li><%= link_to "Contact", contact_path %></li>
+			<%= button_group do %>
+			<li><%= pill_button_link_to "About", about_path %></li>
+			<li><%= pill_button_link_to "Contact", contact_path %></li>
+			<% end %>
 		</ul>
 	</nav>
 </footer>

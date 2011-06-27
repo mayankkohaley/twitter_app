@@ -12,14 +12,14 @@ header {
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: #cff;
 }
 
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+	background: #fff;
 }
 
 /* Navigation */
@@ -29,7 +29,6 @@ nav {
 }
 
 nav {
-  background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
 }

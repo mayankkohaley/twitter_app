@@ -10,8 +10,8 @@
     <%= f.password_field :password %>
   </div>
   <div class="actions">
-    <%= f.submit "Sign in" %>
+    <%= button_submit_tag 'Submit' %>
   </div>
 <% end %>
 
-<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+<p>New user? <%= add_button_link_to "Sign up now!", signup_path %></p>
